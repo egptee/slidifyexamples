@@ -1,0 +1,71 @@
+---
+title       : peer assessment project
+subtitle    : slidify example
+author      : yuxiao
+job         : student
+framework   : io2012      # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : solarized.light     # tomorrow 
+widgets     : [bootstrap,quiz]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+--- 
+
+## Slide1
+plot some funny plots
+```{r}
+x<-rbinom(20,prob=0.5,size=40)
+angle<-seq(0,2*pi,2*pi/20)
+plot(cos(angle),sin(angle),col=x)
+```
+
+--- .class &radio 
+
+## Slide2
+
+What is 5%2 ?
+
+1. _1_
+2. 2
+3. 3
+4. 4
+***.hint 
+if 5/2=2*2+1 then 1 = 5%2  
+***.explanation 
+sdsf
+
+--- .class #id 
+## Slide 3
+
+```{r}
+data(diamonds)
+summary(diamonds)
+```
+
+--- &radio
+## Question 1
+
+What is 1 + 1?
+
+1. 1
+2. _2_
+3. 3
+4. 4
+
+*** .hint
+This is a hint
+
+*** .explanation
+This is an explanation
+wait to finish
+
+--- .class #id 
+## Slide 5
+
+finally  :)
+
+
+--- .class #id 
+
+
+
